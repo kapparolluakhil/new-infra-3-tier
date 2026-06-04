@@ -40,7 +40,7 @@ resource "aws_launch_template" "swiggy-app-template" {
     ignore_changes  = all
   }
   tags = {
-    Name = "SWIGGY-WEB-SERVER"
+    Name = "SWIGGY-APP-SERVER"
   }
 }
 
