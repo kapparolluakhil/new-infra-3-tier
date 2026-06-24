@@ -6,10 +6,10 @@ resource "aws_db_subnet_group" "swiggy-db-sub-grp" {
 
 resource "aws_db_instance" "swiggy-db" {
   allocated_storage           = 20
-  storage_type                = "gp3"
+  storage_type                = "gp2"
   engine                      = "mysql"
   engine_version              = "8.4.8"
-  instance_class              = "db.m5.large"
+  instance_class              = "db.t4g.micro"
   identifier                  = "swiggy-db"
   username                    = "admin"
   password                    = "admin123*"
